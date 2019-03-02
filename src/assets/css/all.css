@@ -1,0 +1,197 @@
+    .index-blank{
+        height: .2rem;
+        background-color: #eeeeee;
+    }
+
+     .width-75{
+        width:7.5rem;
+        padding: 0 .3rem;
+      }
+      .c-f{
+        color: #ffffff;
+      }
+      /*定位*/
+      .p-r{
+        position: relative;
+      }
+
+      /*头像*/
+      .portrait{
+        width: .87rem;
+        height: .87rem;
+        border-radius: 20px;
+      }
+      /*这个项目里面的常用样式*/
+       .fs-24{
+          font-size: .24rem;
+       }
+       .fs-28{
+          font-size: .28rem;
+       }
+        .fs-36{
+          font-size: .36rem;
+        }
+        .fs-32{
+            font-size: .32rem;
+        }
+        .fs-30{
+          font-size: .3rem;
+        }
+        .fs-22{
+            font-size: .22rem;
+        }
+        /*颜色*/
+        .c-3{
+          color: #333333;
+        }
+        .b-e{
+          background: #eeeeee;
+        }
+        .b-f4{
+          background: #f4f4f4
+        }
+        .b-f{
+          background: #ffffff
+        }
+        .b-c2{
+            background: #c29354;
+        }
+        .c-c2{
+          color: #c29354;
+        }
+        .c-f3{
+          color: #f34334;
+        } 
+        .c-5f{
+          color: #5f321a;
+        }
+        .c-9{
+          color: #999999;
+        }
+        .c-b1{
+          color: #b1bec9
+        }
+        .c-6{
+          color: #666666;
+        }
+        /*边距*/
+        .m-r-8{
+          margin-right: .8rem;
+        }      
+        .m-l-10{
+          margin-left: 1rem;
+        }
+        .m-t-28{
+            margin-top:.28rem;
+        }
+        .m-t-4{
+            margin-top:.4rem;
+        }
+        .m-b-4{
+          margin-bottom: .4rem;
+        }
+        .m-b-10{
+          margin-bottom: 1rem;
+        }
+        .m-l-14{
+          margin-left: .14rem;
+        }
+        .m-l-25{
+          margin-left: .25rem;
+        }
+        .m-t-18{
+          margin-top: .18rem;
+        }
+        .m-t-1{
+          margin-top: .1rem;
+        }  
+        .m-l-5{
+          margin-left: .5rem;
+        }  
+        .p-b-10{
+          padding-bottom:1rem; 
+        }
+        .p-tb-28{
+            padding: .28rem 0;
+        }
+        .p-tb-45{
+            padding: .45rem 0;
+        }
+        .p-tb-18{
+            padding: .18rem 0;
+        }
+        .p-lr-6{
+            padding: 0 .6rem;
+        }
+        .p-b-7{
+          padding-bottom: .7rem;
+        }
+
+        .p-b-1{
+          padding-bottom: .1rem;
+        }
+        .p-b-2{
+          padding-bottom: .2rem;
+        }
+        .p-1{
+          padding: .1rem;
+        }
+        .m-t-4{
+          margin-top: .4rem;
+        }
+        .m-t-6{
+          margin-top: .6rem;
+        }
+      .h-4{
+        height: .4rem;
+      }    
+      .l-h-4{
+        line-height: .4rem;
+      }
+
+      .w{
+        width: 100%;
+      }
+      /*字体宽度*/
+      .f-w{
+        font-weight: 600;
+      }
+        
+        /*子页面的头部*/
+      .z-header{
+        height: .88rem;
+        line-height: .88rem;
+    }
+
+
+/*发布动态、什么的*/
+.textarea{
+    width: 96%;
+    border: 0;
+    height: 2rem;
+    font-family: PingFang-SC-Regular;  
+}
+ .add{
+        background: url("../../img/addImg.jpg") no-repeat left center;
+        background-size: 1.6rem;
+        width: 1.60rem;
+        height: 1.60rem;
+    }
+
+
+    /*边框*/
+  .bb-1-e{
+    border-bottom: solid 1px #eeeeee;
+  }
+
+  .b-0{
+    border: 0;
+  }
+  .b-1{
+    border: 1px solid;
+  }
+      
+  .f-family{
+    font-family: PingFang-SC-Regular;
+  }
+  
