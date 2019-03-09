@@ -2,7 +2,7 @@
 <div class='layer'>
     <header>
         <img src='../../assets/img/focus.jpg' />
-        <div class="mine-h-center">
+        <div class="mine-h-center" @click='router_go()'>
             <em>陌上浅笑</em>
             <span>希望在这里能提高我的英语！</span>
         </div>
@@ -11,32 +11,32 @@
     <main>
         <ul class="mui-table-view">
 				<li class="mui-table-view-cell">
-					<router-link class="mui-navigate-right" to=''>
+					<router-link class="mui-navigate-right" to='/mine/course_log'>
                         <em class='iconfont icon-kechengjilu_nor'></em>
 						课程记录
 					</router-link>
 				</li>
 				<li class="mui-table-view-cell">
-					<router-link class="mui-navigate-right" to=''>
+					<router-link class="mui-navigate-right" to='/mine/message'>
                         <em class='iconfont icon-xiaoxi'></em>
 						消息中心
 					</router-link>
 				</li>
                 <li class="mui-table-view-cell">
-					<router-link class="mui-navigate-right" to=''>
+					<router-link class="mui-navigate-right" to='/mine/my_paurse'>
                         <em class='iconfont icon-qianbao'></em>
 						我的钱包
 					</router-link>
                     
 				</li>
                 <li class="mui-table-view-cell">
-					<router-link class="mui-navigate-right" to=''>
+					<router-link class="mui-navigate-right" to='/mine/feedback'>
                         <em class='iconfont icon-yijianfankui'></em>
 						意见反馈
 					</router-link>
 				</li>
                 <li class="mui-table-view-cell">
-					<router-link class="mui-navigate-right" to=''>
+					<router-link class="mui-navigate-right" to='/mine/setting'>
                         <em class='iconfont icon-gear'></em>
 						设置
 					</router-link>
@@ -55,6 +55,11 @@ export default {
   },
   data() {
     return {};
+  },
+  methods:{
+    router_go(){
+      this.$router.push("/mine/mine-data")
+    }
   }
 };
 </script>

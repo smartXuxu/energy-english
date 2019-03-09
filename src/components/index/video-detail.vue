@@ -7,7 +7,8 @@
             <h3>课程详情</h3>
             <del class='iconfont icon-shoucang11'></del>
         </div>
-        <video src=""></video>
+        <video  controls='controls' width='100%'   preload="auto" playsinline webkit-playsinline name='media' controlsList="nodownload"  src="../../assets/img/test.mp4">
+         </video>
     </header>
      <mt-navbar v-model="selected">
   <mt-tab-item id="1">介绍</mt-tab-item>
@@ -20,13 +21,14 @@
         <h3>
          【词汇】导学课(学习规划） 
       </h3>  
-      <div>
+      <!-- 跳转到个人详情页面-->      
+      <router-link  v-bind="{to:'/index/mine_index/'+1}">
            <img src='../../assets/img/focus.jpg' />
         <div class="mine-h-center">
             <em>资深英语顾问</em>
             <span>杜浩雅</span>
         </div>
-          </div> 
+          </router-link> 
       </div>
      <div class="info">
          <p>课程简介</p>
@@ -65,7 +67,7 @@
 </mt-tab-container>
 <div class="join">
          <em>￥9.90</em>
-         <button>立即报名</button>
+         <button @click='join()'>立即报名</button>
      </div>
 </div>
 </template>
@@ -76,7 +78,8 @@ export default {
   data() {
     return {
       id: 0,
-      selected: "1"
+      selected: "1",
+      orderId: 0
     };
   },
   cretated() {
@@ -86,11 +89,17 @@ export default {
   methods: {
     back_go() {
       this.$router.go(-1); //返回上一层
+    },
+    join() {
+      this.$router.push({
+        path: "/index/sure_order",
+        query: { orderId: this.orderId }
+      });
     }
   }
 };
 </script>
-<style lang='less'>
+<style lang='less' scoped >
 @import url("../../assets/css/common");
 .header-style {
   position: absolute;
@@ -102,7 +111,6 @@ export default {
   border-radius: 50%;
   color: #fff;
   top: 30%;
-
   background: rgba(0, 0, 0, 0.3);
 }
 header {
@@ -151,7 +159,6 @@ header {
   border-bottom: 0;
   position: relative;
   color: @baseColor;
-
   &:after {
     content: "";
     height: 3px;
@@ -164,92 +171,92 @@ header {
   }
 }
 .infomation {
-    padding:.2rem .3rem 1rem .3rem;
+  padding: 0.2rem 0.3rem 1rem 0.3rem;
   > .detail-header {
     > h3 {
       .line(1);
       font-size: 0.3rem;
       padding: 0.3rem;
     }
-    >div{
-        position:relative;
-        >img{
-            width: 1rem;
-            height: 1rem;
-            border-radius: 50% ;
-        }
-        >.mine-h-center{
-            position:absolute;
-            left: 1.3rem;
-            top:15%;
-            >em{
-               display: block; 
-               font-size:.28rem;
-            }
-        }
-    }
-  }
-  >.info{
-      padding-top: .5rem;
-      >p{
-          font-size:.3rem;
-          height: 1rem;
-          line-height: 1rem;
-          color:#333;
-          font-weight:700;
-
-      }
-      >h5{
-        font-size:.28rem;
-        line-height: .4rem;
-        color:#333;  
-      }
-  }
-  
-}
-.study-class {
-    padding:.2rem .3rem 1rem .3rem;
-    >ul{
-        width: 100%;
-        >li{
-             width: 100%;
-             padding:.2rem 0;
-            p{
-                .line(1);
-                font-size:.28rem;
-                color:#333;
-                margin-bottom: .1rem;
-            }
-            >h3{
-                font-size:.24rem;
-                color:#666;
-                .line(1);
-            }
-        }
-    }
-}
-.join{
-      position:fixed;
-      bottom: 0;
-      left: 0;
+    > a {
+      display: block;
       width: 100%;
+      position: relative;
+      > img {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+      }
+      > .mine-h-center {
+        position: absolute;
+        left: 1.3rem;
+        top: 15%;
+        > em {
+          display: block;
+          font-size: 0.28rem;
+        }
+      }
+    }
+  }
+  > .info {
+    padding-top: 0.5rem;
+    > p {
+      font-size: 0.3rem;
       height: 1rem;
       line-height: 1rem;
-      >button{
-          width:29%;
-          color:#fff;
-          font-size:.32rem;
-           background-color: @baseColor;
-           height: 1rem;
-      }
-      >em{
-         padding-left: .3rem;
-         font-size:.28rem;
-         color:#f50c0c;
-          width:70%;
-          height: 1rem;
-          display: inline-block;
-          background-color: #fff;
-      }
+      color: #333;
+      font-weight: 700;
+    }
+    > h5 {
+      font-size: 0.28rem;
+      line-height: 0.4rem;
+      color: #333;
+    }
   }
+}
+.study-class {
+  padding: 0.2rem 0.3rem 1rem 0.3rem;
+  > ul {
+    width: 100%;
+    > li {
+      width: 100%;
+      padding: 0.2rem 0;
+      p {
+        .line(1);
+        font-size: 0.28rem;
+        color: #333;
+        margin-bottom: 0.1rem;
+      }
+      > h3 {
+        font-size: 0.24rem;
+        color: #666;
+        .line(1);
+      }
+    }
+  }
+}
+.join {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  > button {
+    width: 29%;
+    color: #fff;
+    font-size: 0.32rem;
+    background-color: @baseColor;
+    height: 1rem;
+  }
+  > em {
+    padding-left: 0.3rem;
+    font-size: 0.28rem;
+    color: #f50c0c;
+    width: 70%;
+    height: 1rem;
+    display: inline-block;
+    background-color: #fff;
+  }
+}
 </style>

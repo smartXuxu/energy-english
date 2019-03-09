@@ -23,7 +23,7 @@
 	</div>
 	<!-- 新概念英语 -->
 	<div class="new-concept eng">
-		<p class='clearfix'>新概念英语<router-link to=''  class="f_right">更多>></router-link></p>
+		<p class='clearfix'>新概念英语<router-link to='/lesson'  class="f_right">更多>></router-link></p>
 		<ul class='row'>
 			<!-- 路由传参 -->
 			<li>
@@ -60,7 +60,7 @@
 	</div>
 	<!-- 源动力少儿英语 -->
 	<div class="children-eng eng">
-		<p class='clearfix'>源动力少儿英语<router-link to=''  class="f_right">更多>></router-link></p>
+		<p class='clearfix'>源动力少儿英语<router-link to='/lesson'  class="f_right">更多>></router-link></p>
 		<ul class='row'>
 			<li>
 				<router-link to='' class="img-box">
@@ -96,7 +96,7 @@
 	</div>
 	<!-- 源动力青少年英语 -->
 	<div class="teenagers-eng eng">
-		<p class='clearfix'>源动力青少年英语<router-link to=''  class="f_right">更多>></router-link></p>
+		<p class='clearfix'>源动力青少年英语<router-link to='/lesson'  class="f_right">更多>></router-link></p>
 		<ul class='row'>
 			<li>
 				<router-link to='' class="img-box">
@@ -132,7 +132,7 @@
 	</div>
 	<!-- 徐国章英语 -->
 	<div class="xu-eng eng">
-		<p class='clearfix'>徐国章英语<router-link to=''  class="f_right">更多>></router-link></p>
+		<p class='clearfix'>徐国章英语<router-link to='/lesson'  class="f_right">更多>></router-link></p>
 		<ul class='row'>
 			<li>
 				<router-link to='' class="img-box">
@@ -168,7 +168,7 @@
 	</div>
 	<!-- 源动力商务英语 -->
 	<div class="business-eng eng">
-		<p class='clearfix'>源动力商务英语<router-link to=''  class="f_right">更多>></router-link></p>
+		<p class='clearfix'>源动力商务英语<router-link to='/lesson'  class="f_right">更多>></router-link></p>
 		<ul class='row'>
 			<li>
 				<router-link to='' class="img-box">
@@ -204,7 +204,7 @@
 	</div> 
 	<!-- 疯狂英语 -->
 	<div class="crazy-eng eng">
-		<p class='clearfix'>疯狂英语<router-link to=''  class="f_right">更多>></router-link></p>
+		<p class='clearfix'>疯狂英语<router-link to='/lesson'  class="f_right">更多>></router-link></p>
 		<ul class='row'>
 			<li>
 				<router-link to='' class="img-box">
@@ -306,6 +306,7 @@ header {
   }
 }
 .swiper {
+	background-color: #fff;
   margin-top: 0.3rem;
   padding: 0 0.3rem;
   padding-top: 1.6rem;
@@ -337,6 +338,7 @@ header {
   }
 }
 .eng {
+	background-color: #fff;
 	padding:.3rem;
 	padding-top: 0;
 	border-bottom: 1px solid #eee;
