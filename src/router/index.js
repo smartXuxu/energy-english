@@ -1,5 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+// import Distpicker from 'v-distpicker'
+
+// Vue.component('v-distpicker', Distpicker)
+import VDistpicker from 'v-distpicker'
+
+Vue.component('v-distpicker', VDistpicker)
 import index from '@/components/index/index'
 import lesson from '@/components/lesson/lesson'
 import mine from '@/components/mine/mine'
@@ -26,6 +32,7 @@ import account_save from '@/components/mine/account_save'
 import about_us from '@/components/mine/about_us'
 import change_pwd from '@/components/mine/changepwd'
 import swiper from '@/components/introduce'
+
 Vue.use(Router)
 export default new Router({
   mode: 'history',
